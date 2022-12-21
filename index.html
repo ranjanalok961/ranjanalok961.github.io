@@ -39,7 +39,7 @@
         #A,#B,#C{
             background-color: antiquewhite;
             margin-left: 40px;
-            margin-top: 10px;
+            margin-top: 40px;
         }
         h2,h4{
             text-align: center;
@@ -47,14 +47,16 @@
         #X{
             border: 1px solid black;
         }
+        #Y{background-color:darkslategray}
+        #XYZ{background-color:lightsalmon;}
     </style>
 </head>
 
 <body>
-    <header id="X">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-                <a class="navbar-brand" href="#">Food, LLC</a>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light" id="XYZ" >
+            <div class="container" >
+                <a class="navbar-brand" href="#"><strong>Food ! LLC</strong></a>
 
                 <button class="navbar-toggler d-md-none" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -65,15 +67,15 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item text-center d-lg-none" id="X">
-                            <a class="nav-link" href="#">Chicken</a>
+                            <a class="nav-link" href="#A">Chicken</a>
                         </li>
 
                         <li class="nav-item text-center d-lg-none" id="X">
-                            <a class="nav-link" href="#">Beef</a>
+                            <a class="nav-link" href="#B">Beef</a>
                         </li>
 
                         <li class="nav-item text-center d-lg-none" id="X">
-                            <a class="nav-link disabled" href="#">Sushi</a>
+                            <a class="nav-link disabled" href="#C">Sushi</a>
                         </li>
                     </ul>
                 </div>
@@ -81,10 +83,10 @@
         </nav>
     </header>
 
-    <h2>Our Menu</h2>
+    <h2 style="margin-top: 50px;">Our Menu</h2>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-3 col-md-5 col-sm-10" id="A">
+            <div class="col-lg-3 col-md-5 col-sm-10" id="A" >
                 <h4>Chicken</h4>
                 <br>
                 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia dolores qui ad, soluta consequuntur magni
@@ -109,6 +111,9 @@
                     repellat, veniam consectetur ipsam, eius doloremque ipsa dicta iusto explicabo ea aliquid, itaque, suscipit
                     dolore. Nisi esse tempora, blanditiis magnam et aut illo animi dolores, recusandae mollitia veritatis hic
                     tenetur molestias harum!</p>
+                    <div id="M"><a href="http://127.0.0.1:5500/index.html#">
+                        back to top
+                    </a></div>
             </div>
             <div class="col-lg-3 col-md-5 col-sm-10" id="B">
                 <h4>Beef</h4>
@@ -135,6 +140,9 @@
                     repellat, veniam consectetur ipsam, eius doloremque ipsa dicta iusto explicabo ea aliquid, itaque, suscipit
                     dolore. Nisi esse tempora, blanditiis magnam et aut illo animi dolores, recusandae mollitia veritatis hic
                     tenetur molestias harum!</p>
+                    <div id="M"><a href="http://127.0.0.1:5500/index.html#">
+                        back to top
+                    </a></div>
             </div>
             <div class="col-lg-3 col-md-10 col-sm-10" id="C">
                 <h4>Sushi</h4>
@@ -161,6 +169,9 @@
                     repellat, veniam consectetur ipsam, eius doloremque ipsa dicta iusto explicabo ea aliquid, itaque, suscipit
                     dolore. Nisi esse tempora, blanditiis magnam et aut illo animi dolores, recusandae mollitia veritatis hic
                     tenetur molestias harum!</p>
+                    <div id="M"><a href="http://127.0.0.1:5500/index.html#">
+                        back to top
+                    </a></div>
             </div>
         </div>
     </div>
