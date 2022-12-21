@@ -1,137 +1,170 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-            *{
-                box-sizing: border-box;
-            }
-            .Intro{
-                float:left;
-                margin-top:5px;
-                margin-left:5%;
-                border: 1px solid black;
-                height: max-content;
-                width: 25%;
-                background-color: bisque;
-            }
-            #Name{
-                text-align: center;
-                font:35px black;
-            }
-            button{
-                display: block;
-                margin-top: 10px;
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        #abc {
+            background-image: url("flowerr.jpg");
+        }
+
+        .Intro {
+            float: left;
+            margin-top: 5px;
+            margin-left: 5%;
+            border: 1px solid black;
+            height: max-content;
+            width: 25%;
+            background-color: bisque;
+        }
+
+        #Name {
+            text-align: center;
+            font: 35px black;
+        }
+
+        button {
+            display: block;
+            margin-top: 10px;
+            margin-left: 10%;
+            width: 80%;
+            font: 25px black bold;
+            border: 2px solid black;
+            border-radius: 5px;
+            box-shadow: 5px 5px #808080;
+
+        }
+
+        .Desciption {
+            float: left;
+            width: 25%;
+            margin-left: 5%;
+            margin-top: 5px;
+            border: 1px solid black;
+            text-align: center;
+            background-color: aquamarine;
+        }
+
+        .Add {
+            float: left;
+            width: 25%;
+            margin-left: 5%;
+            margin-top: 5px;
+            border: 1px solid black;
+            text-align: center;
+            background-color: aqua;
+        }
+
+        p {
+            font: 25px;
+        }
+
+        img {
+            margin-left: 10%;
+            margin-top: 10%;
+            max-width: 80%;
+            align: center;
+            border: 1px solid black;
+            border-radius: 250px;
+        }
+
+        button:hover {
+            background-color: burlywood
+        }
+
+        @media(max-width:992px) {
+
+            .Intro,
+            .Desciption,
+            .Add {
+                float: left;
                 margin-left: 10%;
-                width:80%;
-                font:25px black bold;
-                border: 2px solid black;
-                border-radius: 5px;
-                box-shadow: 5px 5px #808080;
-                
+                margin-right: 10%;
+                width: 80%;
             }
-            .Desciption{
-                float: left;
-                width:25%;
-                margin-left: 5%;
-                margin-top: 5px;
-                border: 1px solid black;
-                text-align: center;
-                background-color: aquamarine;
+
+            .Desciption,
+            .Add {
+                clear: left;
             }
-            .Add{
-                float: left;
-                width:25%;
-                margin-left: 5%;
-                margin-top: 5px;
-                border: 1px solid black;
-                text-align: center;
-                background-color:aqua;
-            }
-            p{
-                font: 25px;
-            }
-            img{
-                margin-left: 10%;
-                margin-top: 10%;
-                max-width:80%;
-                align:center;
-                border:1px solid black;
-                border-radius: 250px;
-            }
-            button:hover{
-                background-color:burlywood
-            }
-            @media(max-width:992px){
-                .Intro,.Desciption,.Add{
-                    float: left;
-                    margin-left: 10%;
-                    margin-right: 10%;
-                    width:80%;
-                }
-                .Desciption,.Add{
-                    clear:left;
-                }
-            }
-            .bot{
-                float: left;
-                clear: both;
-            }
-        </style>
-    </head>
-    <body id="abc">
-        <div class="Intro">
-            <div id="Pic">
-                
-                <img src="Alokk.jpg"></img>
-                
-                <p id="Name">
-                    <strong>Ranjan Alok</strong><br>
-                    <strong>B Tech (CSE)</strong><br>
-                    _________________
-                </p>
-            </div>
-            <div id="web">
-                <form action="https://www.instagram.com/itz_aloksingh_50/">
-                    <button class = "gfg" type="submit">
-                        Instagram
-                    </button>
-                </form>
-                <form action="https://www.facebook.com/profile.php?id=100010857752888">
-                    <button class = "gfg" type="submit">
-                        Facebook
-                    </button>
-                </form>
-                <form action="https://www.linkedin.com/in/alok-singh-a92723238/">
-                    <button class = "gfg" type="submit">
-                        linkdin
-                    </button>
-                </form>
-            </div>
+        }
+
+        .bot {
+            float: left;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body id="abc">
+    <div class="Intro">
+        <div id="Pic">
+
+            <img src="Alokk.jpg"></img>
+
+            <p id="Name">
+                <strong>Ranjan Alok</strong><br>
+                <strong>B Tech (CSE)</strong><br>
+                _________________
+            </p>
         </div>
-        <div class="Desciption">
-            <h1>CONTACT</h1>
-            <h2>Mobile No.</h2>
-            <p>7485860140</p>
-            <h2>Email</h2>
-            <p>ranjanalok961@gmail.com</p>
-            <p>_________________________</p>
-            <h1>Education</h1>
-            <h2>B.Tech(2021-2025)</h2>
-            <P>Computer Science and Engineering (CSE)</P>
-            <P>Lovely Professional University</P>
+        <div id="web">
+            <form action="https://www.instagram.com/itz_aloksingh_50/">
+                <button class="gfg" type="submit">
+                    Instagram
+                </button>
+            </form>
+            <form action="https://www.facebook.com/profile.php?id=100010857752888">
+                <button class="gfg" type="submit">
+                    Facebook
+                </button>
+            </form>
+            <form action="https://www.linkedin.com/in/alok-singh-a92723238/">
+                <button class="gfg" type="submit">
+                    linkdin
+                </button>
+            </form>
+            <form action="https://github.com/ranjanalok961">
+                <button class="gfg" type="submit">
+                    GitHub
+                </button>
+            </form>
         </div>
-        <div class="Add">
-             <h1>Skill</h1>
-             <ul type="circle">
-                <li><h3>Web Development</h3></li>
-                <li><p>Html , Css , Javascript</p></li>
-                <li><p>C , C++ , Python </p></li>
-             </ul>
-        </div>
-        <div class="bot">
-            <a href="#abc"><abbr>Back To Top</abbr></a>
-        </div>
-    </body>
+    </div>
+    <div class="Desciption">
+        <h1>CONTACT</h1>
+        <h2>Mobile No.</h2>
+        <p>7485860140</p>
+        <h2>Email</h2>
+        <p>ranjanalok961@gmail.com</p>
+        <p>_________________________</p>
+        <h1>Education</h1>
+        <h2>B.Tech(2021-2025)</h2>
+        <P>Computer Science and Engineering (CSE)</P>
+        <P>Lovely Professional University</P>
+    </div>
+    <div class="Add">
+        <h1>Skill</h1>
+        <ul type="circle">
+            <li>
+                <h3>Web Development</h3>
+            </li>
+            <li>
+                <p>Html , Css , Javascript</p>
+            </li>
+            <li>
+                <p>C , C++ , Python </p>
+            </li>
+        </ul>
+    </div>
+    <div class="bot">
+        <a href="#abc"><abbr>Back To Top</abbr></a>
+    </div>
+</body>
+
 </html>
