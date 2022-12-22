@@ -1,70 +1,29 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="module2-solution.css"/>
-        <style>
-            div{
-                position: relative;
-            }
-            #X,#Y,#Z{
-                position: absolute;
-                border: 1px solid black;
-                margin-top: 0px;
-                top:0px;
-                right:0px;
-                width:100px;
-                height:50px;
-                text-align: center;
-                font: 25px strong black;
-            }
-            #X{
-                background-color: blue;
-            }
-            #Y{
-                background-color: aqua;
-            }
-            #Z{
-                background-color:aquamarine;
-            }
-            #a
-            {
-                margin-top: 50px;
-            }
-        </style>
-    </head>
-    <body>
-        <p>
-            <strong>
-                Our Menu
-            </strong>
-        </p>
-        <div class="row">
-            <div class="A">
-                <div id="X">
-                    Chicken
-                </div>
-                <p id="a">
-                    While not specifying borders and colors according to the requirements does not hurt your grade so much, not doing so will make it much harder for your classmates to peer grade the rest of your assignment, possibly resulting in a much lower grade.
-                </p>
-            </div>
-            <div class="B">
-                <div id="Y">
-                    Beef
-                </div>
-                <p id="a">
-                    While not specifying borders and colors according to the requirements does not hurt your grade so much, not doing so will make it much harder for your classmates to peer grade the rest of your assignment, possibly resulting in a much lower grade.
-                </p>
-            </div>
-            <div class="C">
-                <div id="Z">
-                    Sushi
-                </div>
-                <p id="a">
-                    While not specifying borders and colors according to the requirements does not hurt your grade so much, not doing so will make it much harder for your classmates to peer grade the rest of your assignment, possibly resulting in a much lower grade.
-                </p>
-            </div>         
-        </div>
-    </body>
+<head>
+  <meta charset="utf-8">
+  <title>Module 4 Solution Starter</title>
+  <script>
+    var names = []; // DO NOT REMOVE
+  </script>
+  
+  <script>
+    var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
+    var speakWord1 = "Hello";
+    var speakWord2 = "Good Bye";
+    for (var i = 0; i < names.length; i++) {
+      var firstLetter = names[i].charAt(0).toLowerCase();
+
+      if (firstLetter == 'j') {
+        console.log(speakWord1 + " " + names[i]);
+      } 
+      else {
+        console.log(speakWord2 + " " + names[i]);
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Module 4 Solution Starter</h1>
+</body>
 </html>
