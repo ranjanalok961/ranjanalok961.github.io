@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- saved from url=(1577)https://www.wix.com/site-react-dropdown?uniqueId=comp-kqf7xax91-time&panelType=select&rtl=false&wixStyleId=style-kqf7xaxc&timezone=Asia%2FCalcutta&fieldFill=wixseating-field-fill-custom&fieldFont=wixseating-field-font-custom&fieldColor=wixseating-field-txt-custom&fieldBorderWidth=wixseating-field-border-size-custom&pageId=ioiyq&compId=tpapopup-1671793765498_rtby_comp-kqf7xax91&viewerCompId=tpapopup-1671793765498_rtby_comp-kqf7xax91&siteRevision=181&viewMode=site&deviceType=desktop&locale=en&tz=America%2FLos_Angeles&regionalLanguage=en&width=490&height=436&isInPopup=true&origCompId=comp-kqf7xax91&instance=9wAzbfpNdkOEL0Os2vuslYU0AMrd6MEZ496EHnloUcE.eyJpbnN0YW5jZUlkIjoiNjY5ZTdlZWUtYzExYS00MjBhLThkYjItYWZhY2RlZGEyNjhiIiwiYXBwRGVmSWQiOiIxNDc1YWI2NS0yMDZiLWQ3OWEtODU2ZC1mYTEwYmRiNDc5ZWEiLCJtZXRhU2l0ZUlkIjoiNTY3ODRmOGItYTBkNC00OTZmLWEyMjUtNDE0M2ZjMGNlZTdlIiwic2lnbkRhdGUiOiIyMDIyLTEyLTIzVDExOjA2OjE3Ljk2MVoiLCJkZW1vTW9kZSI6dHJ1ZSwib3JpZ2luSW5zdGFuY2VJZCI6Ijc1MTAwYzYwLTNkMmUtNDdhYS04YTE1LTA3YTQ1NTk0ZGE1OSIsImFpZCI6IjE3NjQ3ZDE2LWIwODItNDNlNS04YjYwLTc3NDU1MzNkMzdkNSIsImJpVG9rZW4iOiIzMGU2MzE2NS02MWNlLTBiNjUtMmY5Ny1lZWVmMjJkNmM4ZjUiLCJzaXRlT3duZXJJZCI6Ijg0NzcwZjY3LWVjYmQtNDRiNi1iMzVhLTU4NGYyZGMxNWFmMSIsInNpdGVJc1RlbXBsYXRlIjp0cnVlfQ&currency=USD&currentCurrency=USD&commonConfig=%7B%22brand%22%3A%22wix%22%2C%22bsi%22%3A%22e9429670-7ac1-4c51-9f22-040c3e7d4bb4%7C5%22%2C%22BSI%22%3A%22e9429670-7ac1-4c51-9f22-040c3e7d4bb4%7C5%22%7D&consent-policy=%7B%22func%22%3A1%2C%22anl%22%3A1%2C%22adv%22%3A0%2C%22dt3%22%3A0%2C%22ess%22%3A1%7D&vsi=0fe66e9c-52a4-458d-9e65-8eb7ccc80557 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>DropDown</title>
+    <!-- NREUM: (4) -->
+    <link rel="stylesheet" href="./app.min(2).css">
+  <style id="wix-react-dropdown-styles-550" data-frame="panel_frame">
+                .wix-react-dropdown-panel-wrapper {
+                    background-color: rgba(223,8,15,1);
+                    color: rgba(255,255,255,1);
+                    border: 1px solid rgba(255,255,255,1);
+                    font:normal normal bold 15px/1.4em poppins-extralight,poppins,sans-serif;
+                }
+                .wix-react-dropdown-panel-wrapper * {
+                    font:normal normal bold 15px/1.4em poppins-extralight,poppins,sans-serif;
+                }
+            
+                .wix-react-dropdown-option.wix-react-dropdown-option-nav {
+                    background-color: rgba(0, 0, 0, 0.1);
+                }
+            </style><style wix-style="">.Title{ font:normal normal bold 96px/1.4em poppins-semibold,poppins,sans-serif; } .Menu{ font:normal normal normal 16px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif; } .Page-title{ font:normal normal bold 40px/1.4em poppins-semibold,poppins,sans-serif; } .Heading-XL{ font:normal normal normal 40px/1.4em poppins-semibold,poppins,sans-serif; } .Heading-L{ font:normal normal bold 38px/1.4em poppins-extralight,poppins,sans-serif; } .Heading-M{ font:normal normal bold 25px/1.4em poppins-extralight,poppins,sans-serif; } .Heading-S{ font:normal normal bold 21px/1.4em poppins-extralight,poppins,sans-serif; } .Body-L{ font:normal normal bold 17px/1.4em poppins-extralight,poppins,sans-serif; } .Body-M{ font:normal normal bold 15px/1.4em poppins-extralight,poppins,sans-serif; } .Body-S{ font:normal normal bold 14px/1.4em poppins-extralight,poppins,sans-serif; } .Body-XS{ font:normal normal normal 12px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif; } }</style><style type="text/css">@font-face {
+    font-display: block;
+    font-family: "Poppins-ExtraLight";
+    src: url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Poppins-extralight/v5/h3r77AwDsldr1E_2g4qqGPk_vArhqVIZ0nv9q090hN8.woff2") format("woff2"),
+    url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Poppins-extralight/v5/h3r77AwDsldr1E_2g4qqGBsxEYwM7FgeyaSgU71cLG0.woff") format("woff"),
+    url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Poppins-extralight/v5/h3r77AwDsldr1E_2g4qqGC3USBnSvpkopQaUR-2r7iU.ttf") format("truetype"),
+    url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Poppins-extralight/v5/poppins-extralight-Svg.svg") format("svg");
+}
+@font-face {
+    font-display: block;
+    font-family: "Poppins-ExtraLight";
+    font-weight: 700;
+    src: url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Poppins-extralight/v5/rijG6I_IOXJjsH07UEo2mw.woff2") format("woff2"),
+    url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Poppins-extralight/v5/p0A1C4_gK5NzKtuGSwNurQ.woff") format("woff"),
+    url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Poppins-extralight/v5/rATt6MpBkxjRr3sy5fMEDg.ttf") format("truetype"),
+    url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Poppins-extralight/v5/poppins-extralight-700-Svg.svg") format("svg");
+}
+@font-face {
+    font-display: block;
+    font-family: "Poppins-ExtraLight";
+    font-style: italic;
+    src: url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Poppins-extralight/v5/-GlaWpWcSgdVagNuOGuFKRUOjZSKWg4xBWp_C_qQx0o.woff2") format("woff2"),
+    url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Poppins-extralight/v5/-GlaWpWcSgdVagNuOGuFKRa1RVmPjeKy21_GQJaLlJI.woff") format("woff"),
+    url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Poppins-extralight/v5/-GlaWpWcSgdVagNuOGuFKdqQynqKV_9Plp7mupa0S4g.ttf") format("truetype"),
+    url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Poppins-extralight/v5/poppins-extralight-italic-Svg.svg") format("svg");
+}
+@font-face {
+    font-display: block;
+    font-family: "Poppins-ExtraLight";
+    font-weight: 700;
+    font-style: italic;
+    src: url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Poppins-extralight/v5/Fm41upUVp7KTKUZhL0PfQVtXRa8TVwTICgirnJhmVJw.woff2") format("woff2"),
+    url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Poppins-extralight/v5/Fm41upUVp7KTKUZhL0PfQT8E0i7KZn-EPnyo3HZu7kw.woff") format("woff"),
+    url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Poppins-extralight/v5/Fm41upUVp7KTKUZhL0PfQaCWcynf_cDxXwCLxiixG1c.ttf") format("truetype"),
+    url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Poppins-extralight/v5/poppins-extralight-700-italic-Svg.svg") format("svg");
+}
+@font-face {
+    font-display: block;
+    font-family: "Poppins-SemiBold";
+    src: url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Poppins-semibold/v5/9VWMTeb5jtXkNoTv949Npfk_vArhqVIZ0nv9q090hN8.woff2") format("woff2"),
+    url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Poppins-semibold/v5/9VWMTeb5jtXkNoTv949NpRsxEYwM7FgeyaSgU71cLG0.woff") format("woff"),
+    url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Poppins-semibold/v5/9VWMTeb5jtXkNoTv949NpS3USBnSvpkopQaUR-2r7iU.ttf") format("truetype"),
+    url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Poppins-semibold/v5/poppins-semibold-Svg.svg") format("svg");
+}
+@font-face {
+    font-display: block;
+    font-family: "Poppins-SemiBold";
+    font-weight: 700;
+    src: url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Poppins-semibold/v5/aDjpMND83pDErGXlVEr-Sfk_vArhqVIZ0nv9q090hN8.woff2") format("woff2"),
+    url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Poppins-semibold/v5/aDjpMND83pDErGXlVEr-SRsxEYwM7FgeyaSgU71cLG0.woff") format("woff"),
+    url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Poppins-semibold/v5/aDjpMND83pDErGXlVEr-SS3USBnSvpkopQaUR-2r7iU.ttf") format("truetype"),
+    url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Poppins-semibold/v5/poppins-semibold-700-Svg.svg") format("svg");
+}
+@font-face {
+    font-display: block;
+    font-family: "Poppins-SemiBold";
+    font-style: italic;
+    src: url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Poppins-semibold/v5/RbebACOccNN-5ixkDIVLjRUOjZSKWg4xBWp_C_qQx0o.woff2") format("woff2"),
+    url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Poppins-semibold/v5/RbebACOccNN-5ixkDIVLjRa1RVmPjeKy21_GQJaLlJI.woff") format("woff"),
+    url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Poppins-semibold/v5/RbebACOccNN-5ixkDIVLjdqQynqKV_9Plp7mupa0S4g.ttf") format("truetype"),
+    url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Poppins-semibold/v5/poppins-semibold-italic-Svg.svg") format("svg");
+}
+@font-face {
+    font-display: block;
+    font-family: "Poppins-SemiBold";
+    font-weight: 700;
+    font-style: italic;
+    src: url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Poppins-semibold/v5/c4FPK8_hIFKoX59qcGwdChUOjZSKWg4xBWp_C_qQx0o.woff2") format("woff2"),
+    url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Poppins-semibold/v5/c4FPK8_hIFKoX59qcGwdCha1RVmPjeKy21_GQJaLlJI.woff") format("woff"),
+    url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Poppins-semibold/v5/c4FPK8_hIFKoX59qcGwdCtqQynqKV_9Plp7mupa0S4g.ttf") format("truetype"),
+    url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Poppins-semibold/v5/poppins-semibold-700-italic-Svg.svg") format("svg");
+}</style><link type="text/css" rel="stylesheet" href="./languages-woff2.css"><link type="text/css" rel="stylesheet" href="./wixMadefor.css"></head>
+  <body>
+    <div id="root"><div class="wix-dropdown-panel" dir="ltr"><div class="_1qxED _15mm3 wix-react-dropdown-panel-wrapper  " data-src-unique-id="comp-kqf7xax91-time"><div class="iP6LI"></div></div></div></div>
+    <script>
+      window.__BASENAME__ = '/site-react-dropdown-statics';
+      window.__INITIAL_STATE__ = JSON.parse(decodeURIComponent("%7B%22sites%22%3A%7B%22list%22%3A%5B%5D%2C%22loading%22%3Afalse%7D%7D"));
+      window.__INITIAL_I18N__ = JSON.parse(decodeURIComponent("%7B%22locale%22%3A%22en%22%2C%22resources%22%3A%7B%22navigation.counter%22%3A%22Counter%22%2C%22navigation.mysites%22%3A%22My%20Sites%22%2C%22sitelist.title%22%3A%22My%20Sites%22%2C%22sitelist.loading%22%3A%22Loading...%22%2C%22counter.apples%22%3A%22%7B%7Bcount%7D%7D%20Apple%22%2C%22counter.apples_plural%22%3A%22%7B%7Bcount%7D%7D%20Apples%22%7D%7D"));
+      window.__UNIQUE_ID__ = JSON.parse(decodeURIComponent("%22comp-kqf7xax91-time%22"));
+      window.__PANEL_TYPE__ = JSON.parse(decodeURIComponent("%22select%22"));
+      window.__STYLE_PARAMS__ = JSON.parse(decodeURIComponent("%7B%22fieldFill%22%3A%22wixseating-field-fill-custom%22%2C%22fieldFont%22%3A%22wixseating-field-font-custom%22%2C%22fieldColor%22%3A%22wixseating-field-txt-custom%22%2C%22fieldBorderWidth%22%3A%22wixseating-field-border-size-custom%22%7D"));
+      window.__RTL__ = false;
+      window.__IS_HEBREW__ = false;
+      window.__STYLE_ID__ = JSON.parse(decodeURIComponent("%22style-kqf7xaxc%22"));
+      window.__TIMEZONE__ = JSON.parse(decodeURIComponent("%22Asia%2FCalcutta%22"));
+      window.__APP_LOCALE__ = JSON.parse(decodeURIComponent("%22%22"));
+      
+    </script>
+    <script src="./jquery.min.js.download"></script>
+    <script type="text/javascript" src="./wix.min.js(1).download"></script>
+    <script src="./moment.js.download"></script>
+    
+    <script src="./app.bundle.min.js(5).download"></script>
+  
+
+</body></html>
