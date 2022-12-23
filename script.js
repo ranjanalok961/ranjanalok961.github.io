@@ -6,7 +6,7 @@
       // byeSpeaker.xxxx
       byeSpeaker.speak(names[i]);
     } else {
-      // helloSpeaker.xxxx
+      
       helloSpeaker.speak(names[i]);
     }
   }
