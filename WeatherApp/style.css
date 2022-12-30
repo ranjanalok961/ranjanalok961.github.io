@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    width: 100%;
+    height: 100%;
+    font-family: 'montserrat', sans-serif;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: top center;
+  }
+  .header{
+    height:20%;
+    width:100%;
+    margin-top: 20px;
+    text-align: center;
+    background-color: transparent;
+  }
+  .input{
+    width:100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  .city{
+    font-size: 30px;
+    border: 2px solid black;
+    border-radius: 5px 0px 5px 0px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+  }
+  button{
+    border: 2px solid black;
+    border-radius: 0px 5px 0px 5px ;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+  }
+  .p{
+    opacity:0;
+  }
+  .pcity{
+    width:100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .data{
+    opacity: 1;
+    width:500px;
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 0px 5px 0px 5px ;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+  }
+  .A{
+    width:100%;
+    font:30px bold;
+    color:ghostwhite;
+  }
