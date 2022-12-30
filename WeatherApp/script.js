@@ -33,7 +33,7 @@ function display(){
         })
         .catch(err => console.error(err));
 
-    }
+   }
     // const options = {
     //     method: 'GET',
     //     headers: {
