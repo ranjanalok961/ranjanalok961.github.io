@@ -40,6 +40,7 @@
     opacity:0;
   }
   .pcity{
+    width:300px;
     width:100%;
     margin-top: 20px;
     display: flex;
