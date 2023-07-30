@@ -20,7 +20,7 @@ body{
     transform: translate(-50%, -50%);
     padding: 5px;
     width: 300px;
-    background-color:cornsilk;
+    background-image: linear-gradient(to right top, #ffba80, #ffaead, #ffb3df, #d0c2fe, #9dd0ff);
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 1.5);
   }
   .input{
