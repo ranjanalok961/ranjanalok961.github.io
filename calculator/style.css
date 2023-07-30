@@ -4,6 +4,11 @@
   }
 body{
     background-image: linear-gradient(to right top, #ffba80, #ffaead, #ffb3df, #d0c2fe, #9dd0ff);
+     font-family: "Poppins", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  margin: 0%;
+  padding: 0%;
 }
 .header{
     margin-bottom: 0%;
@@ -20,7 +25,7 @@ body{
     transform: translate(-50%, -50%);
     padding: 5px;
     width: 300px;
-    background-image: linear-gradient(to right top, #ffba80, #ffaead, #ffb3df, #d0c2fe, #9dd0ff);
+    background-color: #5c7ee5;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 1.5);
   }
   .input{
