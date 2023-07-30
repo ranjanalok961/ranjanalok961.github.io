@@ -1,7 +1,10 @@
-html {
+* {
     font-size: 62.5%;
     box-sizing: border-box;
   }
+body{
+    background-image: linear-gradient(to right top, #ffba80, #ffaead, #ffb3df, #d0c2fe, #9dd0ff);
+}
 .header{
     margin-bottom: 0%;
     width: 100%;
@@ -18,7 +21,7 @@ html {
     padding: 5px;
     width: 300px;
     background-color:cornsilk;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 1.5);
   }
   .input{
     width: 90%;
