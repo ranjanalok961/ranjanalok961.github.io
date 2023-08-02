@@ -86,14 +86,14 @@ header > .right_side,
   height: 500px;
 }
 @media screen and (max-width: 720px) {
-    header > .right_side,
+  header > .right_side,
   .left_side {
     display: none;
   }
-  header > .mypic{
+  header > .mypic {
     height: 280px;
   }
-  .mypic > .image{
+  .mypic > .image {
     height: 250px;
   }
 }
@@ -118,88 +118,91 @@ header > .right_side,
   width: 40%;
   font-size: 16px;
 }
-.skill{
-    margin-top: 50px;
-    display: flex;flex-direction: column;
+.skill {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
 }
-.skill >p{
-    width: 100%;
-    text-align: center;
+.skill > p {
+  width: 100%;
+  text-align: center;
 }
-.skill > h2{
-    margin-top: 10px;
-    width: 100%;
-    text-align: center;
+.skill > h2 {
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
 }
-.skill > .exp{
-    width: 100%;
-    height: 400px;
+.skill > .exp {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+.exp > .webd {
+  margin-left: 10%;
+  flex: 30%;
+  width: 30%;
+  height: 300px;
+  background-color: #2c2c6c;
+  border-radius: 1.5rem;
+}
+.exp > .other {
+  margin-right: 10%;
+  flex: 30%;
+  width: 30%;
+  height: 300px;
+  background-color: #2c2c6c;
+  border-radius: 1.5rem;
+}
+@media screen and (max-width: 720px) {
+  .skill > .exp {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10%;
-}
-.exp > .webd{
-    margin-left: 10%;
-    flex: 30%;
-    width:30%;
-    height: 300px;
-    background-color: #2c2c6c;
-    border-radius: 1.5rem;
-}
-.exp > .other{
+    flex-direction: column;
+    height: 800px;
+    gap: 2%;
+  }
+  .exp > .webd {
     margin-right: 10%;
-    flex: 30%;
-    width: 30%;
-    height: 300px;
-    background-color: #2c2c6c;
-    border-radius: 1.5rem;
-}
-@media screen and (max-width: 720px){
-    .skill > .exp{
-        display: flex;
-        flex-direction: column;
-        height: 800px;
-        gap: 2%;
-    }
-    .exp > .webd{
-        margin-right: 10%;
-        margin-left: 10%;
-        width: 80%;
-        flex: 80%;
-        height: 200px;
-    }
-    .exp > .other{
-        margin-right: 10%;
-        margin-left: 10%;
-        width: 80%;
-        flex: 80%;
-        height: 200px;
-    }
-}
-.webd > h3{
-    text-align: center;
-}
-.webd > p , .progress-bar{
     margin-left: 10%;
-}
-.other > h3{
-    text-align: center;
-}
-.other > p , .progress-bar{
-    margin-left: 10%;
-}
-.progress-bar{
     width: 80%;
-    border-radius: 20px;
-    background-color: whitesmoke;
+    flex: 80%;
+    height: 200px;
+  }
+  .exp > .other {
+    margin-right: 10%;
+    margin-left: 10%;
+    width: 80%;
+    flex: 80%;
+    height: 200px;
+  }
+}
+.webd > h3 {
+  text-align: center;
+}
+.webd > p,
+.progress-bar {
+  margin-left: 10%;
+}
+.other > h3 {
+  text-align: center;
+}
+.other > p,
+.progress-bar {
+  margin-left: 10%;
+}
+.progress-bar {
+  width: 80%;
+  border-radius: 20px;
+  background-color: whitesmoke;
 }
 .progress-bar > .progress-fill {
-    height: 15px;
-    background-color: rgb(146, 194, 235);
-    border-radius: 20px;
-  }
-.contact_me{
+  height: 15px;
+  background-color: rgb(146, 194, 235);
+  border-radius: 20px;
+}
+.contact_me {
   margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
@@ -208,21 +211,22 @@ header > .right_side,
   align-items: center;
   width: 100%;
 }
-.contact_me > p,h2{
+.contact_me > p,
+h2 {
   width: 100%;
   flex: 100%;
   text-align: center;
 }
-.contact_me > .contact{
+.contact_me > .contact {
   margin-top: 20px;
   width: 100%;
   height: 300px;
   display: flex;
   flex-direction: row;
 }
-.contact > .id{
+.contact > .id {
   width: 50%;
-  flex:  50%;
+  flex: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -234,25 +238,27 @@ header > .right_side,
   height: max-content;
   padding: 10px;
   background-color: #2c2c6c;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   justify-content: center;
 }
-.id > div > a , i{
+.id > div > a,
+i {
   color: whitesmoke;
   margin-left: 10px;
 }
-.contact > .talk{
+.contact > .talk {
   width: 50%;
-  flex:  50%;
+  flex: 50%;
 }
-.talk > form{
+.talk > form {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   flex-direction: column;
 }
-form > input , textarea{
+form > input,
+textarea {
   background: transparent;
   margin-top: 1.2rem;
   height: max-content;
@@ -260,12 +266,15 @@ form > input , textarea{
   padding: 10px;
   font-size: 16px;
   border: 2px rgb(59, 59, 222) solid;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
-::placeholder{
+form > label {
+  text-align: center;
+}
+::placeholder {
   color: whitesmoke;
 }
-textarea{
+textarea {
   height: 100px;
 }
 form > button {
@@ -273,27 +282,62 @@ form > button {
   width: 150px;
   height: max-content;
   padding: 10px;
-  border-radius: .5rem;
-  background:rgb(59, 59, 222);
+  border-radius: 0.5rem;
+  background: rgb(59, 59, 222);
   color: whitesmoke;
 }
-@media screen and (max-width: 720px){
-  .contact_me > .contact{
+@media screen and (max-width: 720px) {
+  .contact {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
   }
-  .contact > .id , .talk{
-    margin-left: auto;
-    margin-right: auto;
+  .contact > .id {
     width: 100%;
     flex: 100%;
     flex-direction: column;
     justify-content: center;
   }
-  .talk > form{
+  contact > .talk {
     width: 100%;
+    flex: 100%;
+    flex-direction: column;
+    justify-content: center;
   }
-  form > input , textarea{
-    width: 300px;
+  .talk > form {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  form > label , input , textarea , button {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.menu {
+  position: fixed;
+  right: 40%;
+  left: 40%;
+  bottom: 10%;
+  width: 20%;
+  height: 50px;
+  background: rgb(78, 76, 76);
+  opacity: 0.5;
+  border: 2px solid #608bdf;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.menu > i {
+  width: 10px;
+  height: 10px;
+}
+@media screen and (max-width: 720px){
+  .menu{
+    width: 60%;
+    left: 20%;
+    right: 20%;
   }
 }
