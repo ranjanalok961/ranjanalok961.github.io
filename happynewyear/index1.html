@@ -3,39 +3,167 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style1.css" rel="stylesheet">
-    <script src="script1.js"></script>
-    <Title>Music Player</Title>
+    <title>Happy New Year 2024</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            perspective: 1000px;
+            background: linear-gradient(135deg, #ff512f, #dd2476);
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .container {
+            text-align: center;
+            transform-style: preserve-3d;
+            animation: rotateAnimation 20s linear infinite;
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 5em;
+            margin: 0;
+            text-transform: uppercase;
+            position: relative;
+            display: inline-block;
+            transform: translateZ(50px);
+        }
+
+        .glitch::before,
+        .glitch::after {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .glitch::before {
+            left: 2px;
+            text-shadow: -2px 0 blue;
+            clip: rect(44px, 550px, 56px, 0);
+            animation: noise-anim-1 3s infinite linear alternate-reverse;
+        }
+
+        .glitch::after {
+            left: -2px;
+            text-shadow: -2px 0 red;
+            clip: rect(24px, 550px, 36px, 0);
+            animation: noise-anim-2 2s infinite linear alternate-reverse;
+        }
+
+        @keyframes noise-anim-1 {
+            0% {
+                clip: rect(9px, 9999px, 77px, 0);
+            }
+
+            5% {
+                clip: rect(85px, 9999px, 18px, 0);
+            }
+
+            10% {
+                clip: rect(30px, 9999px, 18px, 0);
+            }
+
+            15% {
+                clip: rect(13px, 9999px, 53px, 0);
+            }
+
+            20% {
+                clip: rect(83px, 9999px, 5px, 0);
+            }
+
+            /*... and so on, adjust as needed*/
+        }
+
+        @keyframes noise-anim-2 {
+            0% {
+                clip: rect(38px, 9999px, 62px, 0);
+            }
+
+            5% {
+                clip: rect(85px, 9999px, 33px, 0);
+            }
+
+            10% {
+                clip: rect(94px, 9999px, 64px, 0);
+            }
+
+            15% {
+                clip: rect(11px, 9999px, 80px, 0);
+            }
+
+            20% {
+                clip: rect(71px, 9999px, 20px, 0);
+            }
+
+            /*... and so on, adjust as needed*/
+        }
+
+        p {
+            color: #fff;
+            font-size: 1.5em;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #fff;
+            color: #333;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #eee;
+        }
+
+        @keyframes rotateAnimation {
+            0% {
+                transform: rotateY(0);
+            }
+
+            100% {
+                transform: rotateY(360deg);
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <div class="cont">
-        <div class="input">
-            <input id="input" type="text" placeholder="Enter Your Name ...">
-            <button type="submit" onclick="Submit()">Submit</button>
-        </div>
-        <div class="notd" id="notd">
-            <div class="dis">
-                <h2>!! Happy New Year !!</h2>
-            </div>
-            <div class="dis">
-                <h2 id="name"></h2>
-            </div>
-            <div class="quo">
-                <div class="quo1">
-                    <h3>
-                        The beginning of a new chapter. This is your year. Make it happen.
-                    </h3>
-                </div>
-                <div class="quo1">
-                    <h3>
-                        I hope all your dreams come true in 2023. Onwards and upwards!
-                    </h3>
-                </div>
-            </div>
-        </div>
+    <div class="container">
+        <h1 class="glitch" data-text="Happy New Year 2024!">Happy New Year 2024!</h1>
+        <p>May this year be filled with joy, success, and prosperity!</p>
+        <button onclick="fireworks()">Click for fireworks!</button>
     </div>
+
+    <script>
+        function fireworks() {
+            alert('💥💫🎇🎆 Happy New Year 2024! 🎆🎇💫💥');
+            // You can add more elaborate fireworks animation or effects using JS canvas, libraries like PIXI.js, etc.
+        }
+    </script>
 </body>
+
 </html>
