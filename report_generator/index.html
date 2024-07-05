@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audiological Evaluation Form</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            border-radius: 10px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header h1, .header h2, .header h3 {
+            margin: 5px 0;
+            color: #333;
+        }
+        .header h1 {
+            font-size: 24px;
+        }
+        .header h2 {
+            font-size: 18px;
+            font-weight: normal;
+            color: #555;
+        }
+        .header h3 {
+            font-size: 16px;
+            font-weight: normal;
+            color: #777;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+        .form-group input {
+            width: calc(100% - 10px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: border-color 0.3s ease;
+        }
+        .form-group input:focus {
+            border-color: #007BFF;
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+        .form-group.inline {
+            display: flex;
+            justify-content: space-between;
+        }
+        .form-group.inline .inline-group {
+            width: calc(25% - 10px);
+        }
+        #medicines {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .buttons button {
+            padding: 12px 24px;
+            cursor: pointer;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: background-color 0.3s ease;
+        }
+        .buttons button:hover {
+            background-color: #0056b3;
+        }
+        .signature {
+            text-align: right;
+            margin-top: 20px;
+        }
+        .signature label {
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="shoplogo.jpg" alt="Logo">
+            <h1>Gaur Primary Ear Care Center</h1>
+            <h2>गौर प्राथमिक कान स्याहार केन्द्र</h2>
+            <h3>श्रवणशक्ति परीक्षण फारम</h3>
+            <p>Gaur, Rautahat (2075)</p>
+            <!-- <h3>AUDIOLOGICAL EVALUATION FORM</h3> -->
+        </div>
+        <form id="evaluation-form">
+            <div class="form-group inline">
+                <div class="inline-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="inline-group">
+                    <label for="age">Age</label>
+                    <input type="text" id="age" name="age" required>
+                </div>
+                <div class="inline-group">
+                    <label for="sex">Sex</label>
+                    <input type="text" id="sex" name="sex" required>
+                </div>
+                <div class="inline-group">
+                    <label for="opd-no">OPD No</label>
+                    <input type="text" id="opd-no" name="opd-no" required>
+                </div>
+            </div>
+            <div class="form-group inline">
+                <div class="inline-group">
+                    <label for="referred-by">Referred by</label>
+                    <input type="text" id="referred-by" name="referred-by" required>
+                </div>
+                <div class="inline-group">
+                    <label for="prov-diag">Prov Diag</label>
+                    <input type="text" id="prov-diag" name="prov-diag" required>
+                </div>
+                <div class="inline-group">
+                    <label for="date">Date</label>
+                    <input type="text" id="date" name="date" required>
+                </div>
+            </div>
+            <div id="medicines">
+                <div class="form-group dynamic-medicine">
+                    <div class="medicine-label">
+                        <label for="medicine-1">1</label>
+                    </div>
+                    <div class="medicine-input">
+                        <input type="text" id="medicine-1" name="medicine-1">
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button type="button" onclick="addMedicine()">Add Medicine</button>
+                <button type="button" onclick="generatePDF()">Generate PDF</button>
+            </div>
+            <div class="signature">
+                <label for="signature">Signature: __________________________</label>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script>
+        let medicineCount = 1;
+
+        function addMedicine() {
+            medicineCount++;
+            const medicineDiv = document.createElement('div');
+            medicineDiv.className = 'form-group dynamic-medicine';
+            medicineDiv.innerHTML = `
+                <div class="medicine-label">
+                    <label for="medicine-${medicineCount}">${medicineCount}</label>
+                </div>
+                <div class="medicine-input">
+                    <input type="text" id="medicine-${medicineCount}" name="medicine-${medicineCount}">
+                </div>
+            `;
+            document.getElementById('medicines').appendChild(medicineDiv);
+        }
+
+        async function generatePDF() {
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF();
+
+            // Remove buttons and collapse input borders
+            document.querySelector('.buttons').style.display = 'none';
+            document.querySelectorAll('input').forEach(input => {
+                input.style.border = 'none';
+                input.style.outline = 'none';
+            });
+
+            const formContainer = document.querySelector('.container');
+
+            await html2canvas(formContainer, {
+                scale: 2,
+                scrollY: -window.scrollY
+            }).then(canvas => {
+                const imgData = canvas.toDataURL('image/png');
+                const imgProps = doc.getImageProperties(imgData);
+                const pdfWidth = doc.internal.pageSize.getWidth();
+                const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
+
+                doc.addImage(imgData, 'PNG', 0, 0, pdfWidth, pdfHeight);
+                doc.save('evaluation-form.pdf');
+            });
+
+            // Restore buttons and input borders
+            document.querySelector('.buttons').style.display = 'flex';
+            document.querySelectorAll('input').forEach(input => {
+                input.style.border = '1px solid #ccc';
+                input.style.outline = 'none';
+            });
+        }
+    </script>
+</body>
+</html>
