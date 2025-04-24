@@ -1,180 +1,128 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy | Hiifi Messenger</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      background-color: #fff;
+    }
 
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    h1 {
+      color: #007bff;
+      text-align: center;
+      margin-bottom: 20px;
+    }
 
-    <title>Menu</title>
+    h2 {
+      color: #333;
+      margin-top: 30px;
+      font-size: 1.3rem;
+    }
 
-    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+    ul {
+      padding-left: 20px;
+    }
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
-        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    li {
+      margin-bottom: 10px;
+    }
 
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    @media (max-width: 600px) {
+      .container {
+        padding: 15px;
+      }
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
-        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
-        crossorigin="anonymous"></script>
+      h1 {
+        font-size: 1.5rem;
+      }
 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
-        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
-        crossorigin="anonymous"></script>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        .container {
-            margin: 0px;
-        }
-        #A,#B,#C{
-            background-color: antiquewhite;
-            margin-left: 40px;
-            margin-top: 40px;
-        }
-        h2,h4{
-            text-align: center;
-        }
-        #X{
-            border: 1px solid black;
-        }
-        #Y{background-color:darkslategray}
-        #XYZ{background-color:lightsalmon;}
-    </style>
+      h2 {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
 </head>
+<body>
+  <div class="container">
+    <h1>Privacy Policy for Hiifi Messenger</h1>
 
-<body id="bdy">
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light" id="XYZ" >
-            <div class="container" >
-                <a class="navbar-brand" href="#"><strong>Food ! LLC</strong></a>
+    <h2>1. Introduction</h2>
+    <p>
+      Welcome to Hiifi Messenger! Your privacy is important to us. This Privacy Policy explains how we collect, use, and protect your personal information when you use our mobile application. By using Hiifi Messenger, you agree to the terms outlined in this policy.
+    </p>
 
-                <button class="navbar-toggler d-md-none" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation" >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+    <h2>2. Information We Collect</h2>
+    <p>When you use Hiifi Messenger, we may collect the following types of data:</p>
+    <strong>Personal Information:</strong>
+    <ul>
+      <li>Email address, phone number, or social login credentials used during account creation (via Firebase Authentication).</li>
+      <li>Profile details such as name and profile picture, if added by the user.</li>
+    </ul>
+    <strong>Messaging Data:</strong>
+    <ul>
+      <li>Text messages.</li>
+    </ul>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item text-center d-lg-none" id="X">
-                            <a class="nav-link" href="#A">Chicken</a>
-                        </li>
+    <h2>3. How We Use Your Information</h2>
+    <ul>
+      <li>To create and manage user accounts.</li>
+      <li>To enable secure messaging and real-time communication.</li>
+      <li>To deliver notifications and updates relevant to your messages or activity.</li>
+      <li>To improve app functionality and user experience.</li>
+      <li>To troubleshoot bugs and enhance security.</li>
+    </ul>
 
-                        <li class="nav-item text-center d-lg-none" id="X">
-                            <a class="nav-link" href="#B">Beef</a>
-                        </li>
+    <h2>4. Data Protection and Security</h2>
+    <ul>
+      <li>All data is transmitted using industry-standard encryption (HTTPS).</li>
+      <li>User authentication is handled securely using Firebase Authentication.</li>
+      <li>Stored media and messages are protected with Firebase Security Rules and access controls.</li>
+      <li>We do not sell or share your personal data with third parties.</li>
+    </ul>
 
-                        <li class="nav-item text-center d-lg-none" id="X">
-                            <a class="nav-link disabled" href="#C">Sushi</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <h2>5. Data Retention</h2>
+    <p>
+      We retain your data as long as your account is active, or as needed to provide services. You may request deletion of your account and associated data at any time.
+    </p>
 
-    <h2 style="margin-top: 50px;">Our Menu</h2>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-3 col-md-5 col-sm-10" id="A" >
-                <h4>Chicken</h4>
-                <br>
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia dolores qui ad, soluta consequuntur magni
-                    assumenda ipsa nulla facere alias repellendus expedita a error? Pariatur repellat consectetur fugiat, velit
-                    quam quaerat adipisci nam magnam dolorem aperiam, odit cum eveniet in, quibusdam. Ratione sint, enim placeat
-                    dicta vero aliquid voluptatibus nemo saepe nam ipsa delectus rerum accusamus dolorem sunt repudiandae
-                    perspiciatis officia, sequi odio beatae ut modi quod nisi perferendis alias. Placeat officiis optio, itaque
-                    aperiam quidem, officia assumenda voluptatem sit, at facilis alias excepturi repudiandae iure minus commodi,
-                    blanditiis cupiditate nam doloremque nihil. Porro, unde sit hic blanditiis voluptates. Suscipit quae sint
-                    tenetur in qui doloribus assumenda ut a neque repellendus aliquam, consequuntur fugit voluptatem totam
-                    nostrum pariatur ex voluptatibus, perspiciatis ratione? Quisquam expedita doloribus ab quaerat quidem unde,
-                    reiciendis numquam ullam corporis tenetur debitis sequi incidunt, quas voluptates magni enim officiis vero
-                    rem dolorem ut iure? Dignissimos culpa nihil quod voluptatibus delectus iure adipisci accusamus architecto
-                    velit aliquid eius numquam consequatur, beatae harum porro neque excepturi, vero molestias quas, fugiat
-                    asperiores animi eos provident. Similique quam, fuga aut cupiditate quae dicta architecto voluptatum nulla!
-                    Facilis, officia quam iusto consequatur quisquam perspiciatis asperiores consequuntur id, dolorum saepe nam
-                    laudantium. Est saepe amet maxime voluptatem cum, enim eius, natus dignissimos similique. Qui libero quo
-                    consequatur veritatis, ab fugit. Ducimus eveniet quia ad tempore ipsum laudantium obcaecati consequuntur,
-                    temporibus nihil facere consequatur quod officiis magnam vitae in ea repellendus natus quis debitis
-                    repudiandae placeat totam. Illo ipsum laudantium autem, beatae quisquam rerum optio eos. Minima asperiores
-                    est ea vero iste nam, dignissimos voluptas eaque, similique, nesciunt eum! Blanditiis sapiente praesentium
-                    repellat, veniam consectetur ipsam, eius doloremque ipsa dicta iusto explicabo ea aliquid, itaque, suscipit
-                    dolore. Nisi esse tempora, blanditiis magnam et aut illo animi dolores, recusandae mollitia veritatis hic
-                    tenetur molestias harum!</p>
-                    <div id="M"><a href="#bdy">
-                        back to top
-                    </a></div>
-            </div>
-            <div class="col-lg-3 col-md-5 col-sm-10" id="B">
-                <h4>Beef</h4>
-                <br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia dolores qui ad, soluta consequuntur magni
-                    assumenda ipsa nulla facere alias repellendus expedita a error? Pariatur repellat consectetur fugiat, velit
-                    quam quaerat adipisci nam magnam dolorem aperiam, odit cum eveniet in, quibusdam. Ratione sint, enim placeat
-                    dicta vero aliquid voluptatibus nemo saepe nam ipsa delectus rerum accusamus dolorem sunt repudiandae
-                    perspiciatis officia, sequi odio beatae ut modi quod nisi perferendis alias. Placeat officiis optio, itaque
-                    aperiam quidem, officia assumenda voluptatem sit, at facilis alias excepturi repudiandae iure minus commodi,
-                    blanditiis cupiditate nam doloremque nihil. Porro, unde sit hic blanditiis voluptates. Suscipit quae sint
-                    tenetur in qui doloribus assumenda ut a neque repellendus aliquam, consequuntur fugit voluptatem totam
-                    nostrum pariatur ex voluptatibus, perspiciatis ratione? Quisquam expedita doloribus ab quaerat quidem unde,
-                    reiciendis numquam ullam corporis tenetur debitis sequi incidunt, quas voluptates magni enim officiis vero
-                    rem dolorem ut iure? Dignissimos culpa nihil quod voluptatibus delectus iure adipisci accusamus architecto
-                    velit aliquid eius numquam consequatur, beatae harum porro neque excepturi, vero molestias quas, fugiat
-                    asperiores animi eos provident. Similique quam, fuga aut cupiditate quae dicta architecto voluptatum nulla!
-                    Facilis, officia quam iusto consequatur quisquam perspiciatis asperiores consequuntur id, dolorum saepe nam
-                    laudantium. Est saepe amet maxime voluptatem cum, enim eius, natus dignissimos similique. Qui libero quo
-                    consequatur veritatis, ab fugit. Ducimus eveniet quia ad tempore ipsum laudantium obcaecati consequuntur,
-                    temporibus nihil facere consequatur quod officiis magnam vitae in ea repellendus natus quis debitis
-                    repudiandae placeat totam. Illo ipsum laudantium autem, beatae quisquam rerum optio eos. Minima asperiores
-                    est ea vero iste nam, dignissimos voluptas eaque, similique, nesciunt eum! Blanditiis sapiente praesentium
-                    repellat, veniam consectetur ipsam, eius doloremque ipsa dicta iusto explicabo ea aliquid, itaque, suscipit
-                    dolore. Nisi esse tempora, blanditiis magnam et aut illo animi dolores, recusandae mollitia veritatis hic
-                    tenetur molestias harum!</p>
-                    <div id="M"><a href="#bdy">
-                        back to top
-                    </a></div>
-            </div>
-            <div class="col-lg-3 col-md-10 col-sm-10" id="C">
-                <h4>Sushi</h4>
-                <br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia dolores qui ad, soluta consequuntur magni
-                    assumenda ipsa nulla facere alias repellendus expedita a error? Pariatur repellat consectetur fugiat, velit
-                    quam quaerat adipisci nam magnam dolorem aperiam, odit cum eveniet in, quibusdam. Ratione sint, enim placeat
-                    dicta vero aliquid voluptatibus nemo saepe nam ipsa delectus rerum accusamus dolorem sunt repudiandae
-                    perspiciatis officia, sequi odio beatae ut modi quod nisi perferendis alias. Placeat officiis optio, itaque
-                    aperiam quidem, officia assumenda voluptatem sit, at facilis alias excepturi repudiandae iure minus commodi,
-                    blanditiis cupiditate nam doloremque nihil. Porro, unde sit hic blanditiis voluptates. Suscipit quae sint
-                    tenetur in qui doloribus assumenda ut a neque repellendus aliquam, consequuntur fugit voluptatem totam
-                    nostrum pariatur ex voluptatibus, perspiciatis ratione? Quisquam expedita doloribus ab quaerat quidem unde,
-                    reiciendis numquam ullam corporis tenetur debitis sequi incidunt, quas voluptates magni enim officiis vero
-                    rem dolorem ut iure? Dignissimos culpa nihil quod voluptatibus delectus iure adipisci accusamus architecto
-                    velit aliquid eius numquam consequatur, beatae harum porro neque excepturi, vero molestias quas, fugiat
-                    asperiores animi eos provident. Similique quam, fuga aut cupiditate quae dicta architecto voluptatum nulla!
-                    Facilis, officia quam iusto consequatur quisquam perspiciatis asperiores consequuntur id, dolorum saepe nam
-                    laudantium. Est saepe amet maxime voluptatem cum, enim eius, natus dignissimos similique. Qui libero quo
-                    consequatur veritatis, ab fugit. Ducimus eveniet quia ad tempore ipsum laudantium obcaecati consequuntur,
-                    temporibus nihil facere consequatur quod officiis magnam vitae in ea repellendus natus quis debitis
-                    repudiandae placeat totam. Illo ipsum laudantium autem, beatae quisquam rerum optio eos. Minima asperiores
-                    est ea vero iste nam, dignissimos voluptas eaque, similique, nesciunt eum! Blanditiis sapiente praesentium
-                    repellat, veniam consectetur ipsam, eius doloremque ipsa dicta iusto explicabo ea aliquid, itaque, suscipit
-                    dolore. Nisi esse tempora, blanditiis magnam et aut illo animi dolores, recusandae mollitia veritatis hic
-                    tenetur molestias harum!</p>
-                    <div id="M"><a href="#bdy">
-                        back to top
-                    </a></div>
-            </div>
-        </div>
-    </div>
+    <h2>6. User Rights</h2>
+    <ul>
+      <li>Access the personal data we have stored about you.</li>
+      <li>Request correction or deletion of your data.</li>
+      <li>Revoke permission for location access or other optional features at any time through app settings.</li>
+    </ul>
+
+    <h2>7. Third-Party Services</h2>
+    <p>
+      Hiifi Messenger uses the following third-party services to provide core functionality:
+    </p>
+    <ul>
+      <li>Firebase Authentication (for user login and account management)</li>
+      <li>Firebase Firestore & Storage (for storing messages and media)</li>
+      <li>Cloudinary (for media management and optimization, if used)</li>
+    </ul>
+    <p>These services have their own privacy policies and follow strict security standards. However, we are not responsible for their independent practices.</p>
+
+    <h2>8. Changes to This Privacy Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. Any changes will be communicated in-app or via our website. Continued use of Hiifi Messenger constitutes your acceptance of the updated policy.
+    </p>
+
+    <h2>9. Contact Us</h2>
+    <p>If you have any questions or concerns regarding this Privacy Policy, please contact us at:<br><a href="mailto:ranjanalok961@gamil.com">ranjanalok961@gamil.com</a></p>
+  </div>
 </body>
-
 </html>
